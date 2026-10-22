@@ -29,7 +29,7 @@ Behind? Load the checkpoint with `load checkpoints/after_step2.pse` and carry on
 | `steps/` | the scripts you run, one per part of the workshop |
 | `structures/` | the two structures (2ACE and 1VOT) |
 | `checkpoints/after_step2.pse` | the state after steps 1 and 2, for catching up |
-| `sessions/AChE_workshop_final.pse` | the finished 68 s movie with all scenes. Open it, type `accept` at the security warning, and press play |
+| `sessions/AChE_workshop_final.pse` | the finished 68 s movie with all scenes, plus answer scenes 12 to 15 for the huperzine A challenge. Open it, type `accept` at the security warning, and press play |
 | `PyMOL_Movies_Handout.docx` | the printable handout with the storyboard page |
 | `PyMOL_Movies_Slides_PyMOL3.1.pdf` | the workshop slides for licensed/educational PyMOL 3.1. Every command can be copied and pasted into PyMOL |
 | `PyMOL_Movies_Slides_OpenSource.pdf` | the same slides with screenshots of open-source PyMOL |
