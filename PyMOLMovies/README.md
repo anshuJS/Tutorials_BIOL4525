@@ -26,6 +26,7 @@ Behind? Load the checkpoint with `load checkpoints/after_step2.pse` and carry on
 
 | Folder or file | What it is |
 |---|---|
+| `AChE_PyMOL_only.mp4` | the finished 68 s example movie, made entirely in PyMOL. Watch this first |
 | `steps/` | the scripts you run, one per part of the workshop |
 | `structures/` | the two structures (2ACE and 1VOT) |
 | `checkpoints/after_step2.pse` | the state after steps 1 and 2, for catching up |
