@@ -43,7 +43,8 @@ Behind? Load the checkpoint with `load checkpoints/after_step2.pse` and carry on
 | 5 | `05_surface_fade.pml` | fading a surface frame by frame |
 | 6 | `06_mechanism.pml` | moving objects: act out the reaction |
 | 7 | `07_export.pml` | saving sessions and movie files |
-| 8 | `08_your_turn.pml` | make your own 15 s movie |
+| 8 | `08_your_turn.pml` | optional: a 15 s huperzine A movie |
+| 9 | `09_your_figure_movie.pml` | your project figure as a movie (in class, in teams) |
 
 ## Commands you will use
 
@@ -107,7 +108,38 @@ Behind? Load the checkpoint with `load checkpoints/after_step2.pse` and carry on
 7. **Security warning when you open a session.** If a session contains `mdo` commands, PyMOL asks first. Type `accept` and the movie will play.
 8. **Render small first.** A full ray-traced movie can take an hour. Test with `mode="draw"` and a small size.
 
-## Plan your movie (step 8)
+## Step 9: your project figure as a movie
+
+You already have a `.pml` script that makes a figure for your paper. It sets the colours, the representations and the camera. That is exactly what a scene needs. In about 20 minutes, as a team, turn it into a 12 second movie:
+
+| Shot | What it shows |
+|---|---|
+| 1 wide | the whole protein, so the viewer knows where we are |
+| 2 figure | your figure, exactly as it appears in the paper |
+| 3 close-up | the part your figure is about, with a gentle rock to finish |
+
+**Before you start**
+
+1. Find your figure script: the `.pml` file your team uploaded with your figures.
+2. Copy it and open the copy in a text editor.
+3. Put a `#` in front of every `ray` line and every `png` line. They are slow and would overwrite your figure image.
+4. If a `load` line points to a file that is not on this computer, change the path, or replace the line with `fetch XXXX` (the PDB code).
+
+**Make the movie**
+
+1. Open `steps/09_your_figure_movie.pml` in a text editor. Every blank to fill in is written as `____`.
+2. Line `@____/your_figure.pml`: put the path to your edited figure script.
+3. Fill in the three captions (`message=`). No commas.
+4. Fill in the close-up: a SMALL selection with the chain named, for example `zoom chain A and resn NAP, 3`. A `select` line in your own script often gives you one ready-made.
+5. Save the file and run it: `@steps/09_your_figure_movie.pml`
+6. Press play. Change the keyframe numbers until the timing feels right, and run again.
+7. Save the session: `save my_figure_movie.pse`. Render it later (step 7).
+
+**Stretch: two panels as two scenes.** If your figure has panels A and B, make one scene per panel and fly between them. Panel B's script must not undo panel A: in a copy of it, put a `#` in front of `delete all`, `reinitialize`, any `fetch` or `load` of a structure that is already loaded, and `remove` lines. The bottom of step 9 shows the commands. Settings such as `bg_color` are not stored in scenes, so the last script to set them wins.
+
+**Show and tell.** At the end, each team plays its movie from the front. 30 seconds each.
+
+## Plan your movie (optional step 8)
 
 Question: how does huperzine A stop acetylcholinesterase?
 
