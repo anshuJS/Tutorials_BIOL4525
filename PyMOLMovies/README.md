@@ -31,6 +31,7 @@ Behind? Load the checkpoint with `load checkpoints/after_step2.pse` and carry on
 | `checkpoints/after_step2.pse` | the state after steps 1 and 2, for catching up |
 | `sessions/AChE_workshop_final.pse` | the finished 68 s movie with all scenes. Open it, type `accept` at the security warning, and press play |
 | `PyMOL_Movies_Handout.docx` | the printable handout with the storyboard page |
+| `PyMOL_Movies_Slides.pdf` | the workshop slides. Every command on them can be copied and pasted into PyMOL |
 
 ## The steps
 
