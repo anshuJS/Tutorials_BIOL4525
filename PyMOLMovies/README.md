@@ -33,6 +33,7 @@ Behind? Load the checkpoint with `load checkpoints/after_step2.pse` and carry on
 | `PyMOL_Movies_Handout.docx` | the printable handout with the storyboard page |
 | `PyMOL_Movies_Slides_PyMOL3.1.pdf` | the workshop slides for licensed/educational PyMOL 3.1. Every command can be copied and pasted into PyMOL |
 | `PyMOL_Movies_Slides_OpenSource.pdf` | the same slides with screenshots of open-source PyMOL |
+| `PyMOL_Movies_Slides_PyMOL3.1.pptx`, `PyMOL_Movies_Slides_OpenSource.pptx` | the same slides as PowerPoint, to present (copy commands from the PDFs) |
 
 ## The steps
 
