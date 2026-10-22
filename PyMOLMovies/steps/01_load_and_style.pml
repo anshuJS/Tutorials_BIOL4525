@@ -83,7 +83,6 @@ set depth_cue, 1
 set fog_start, 0.55
 set field_of_view, 25
 set surface_quality, 1
-set transparency_mode, 3
 # colour the inside of a cut-open surface (seen when you clip into it)
 set ray_interior_color, grey20
 
